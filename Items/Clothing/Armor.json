@@ -1,0 +1,256 @@
+[
+  {
+    "id": "advanced_power_armor",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "advanced power armor" },
+    "description": "A jet black suit of very lightweight powered armor, designed to be used by specialist shock troopers. Known only by the military designation 'Power Armor, Advanced', it appears to have been constructed in limited quantities.",
+    "weight": "1 g",
+    "environmental_protection": 0,
+    "color": "dark_gray",
+    "symbol": "[",
+    "price": "1 cent",
+    "phase": "solid",
+    "volume": "3 ml",
+    "to_hit": 0,
+    "power_armor": false,
+    "warmth": 0,
+    "flags": [ "WATERPROOF", "STURDY", "SHEATH_KNIFE" ],
+    "armor": [ 
+	  {
+		"layers": [ "OUTER" ],
+		"covers": [ "torso" ],
+		"encumbrance": 0,
+		"coverage": 100,
+		"material": [
+		  { "type": "plastic", "thickness": 0, "covered_by_mat": 100 }
+		]
+	  }
+	],
+    "use_action": { "type": "holster", "holster_prompt": "Sheath knife", "holster_msg": "You sheath your %s" }
+  },
+  {
+    "id": "advanced_power_armor_helmet",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "advanced power armor helmet" },
+    "description": "A jet black power armor helmet designed for use with the matching suit, constructed from lightweight materials, but still very protective.",
+    "weight": "1 g",
+    "environmental_protection": 0,
+    "color": "dark_gray",
+    "symbol": "[",
+    "price": "1 cent",
+    "phase": "solid",
+    "volume": "3 ml",
+    "to_hit": 0,
+    "power_armor": false,
+    "armor": [
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "head" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [
+          { "type": "plastic", "thickness": 0, "covered_by_mat": 100 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "mouth" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [
+          { "type": "plastic", "thickness": 0 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "eyes" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [ { "type": "plastic", "thickness": 0 } ]
+      }
+    ],
+    "flags": [ "WATCH", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "helmet_robot",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "robot helmet" },
+    "weight": "2043 g",
+    "color": "green",
+    "techniques": [ "WBLOCK_1" ],
+    "to_hit": -1,
+    "symbol": "[",
+    "description": "A tough green helmet built from durable materials, designed as armor for combat robots, but suitable for humans.",
+    "price": "325 USD",
+    "material": [ "superalloy", "plastic" ],
+    "volume": "2500 ml",
+    "warmth": 30,
+    "phase": "solid",
+    "environmental_protection": 4,
+    "melee_damage": { "bash": 12 },
+    "flags": [ "WATERPROOF", "STURDY", "SUN_GLASSES" ],
+	"armor": [
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "head" ],
+        "encumbrance": 20,
+        "coverage": 100,
+        "material": [
+          { "type": "superalloy", "thickness": 5 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "mouth" ],
+        "encumbrance": 20,
+        "coverage": 100,
+        "material": [
+          { "type": "superalloy", "thickness": 2 },
+          { "type": "plastic", "thickness": 4 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "eyes" ],
+        "encumbrance": 20,
+        "coverage": 100,
+        "material": [ { "type": "plastic", "thickness": 5 } ]
+      }
+    ]
+  },
+  {
+    "id": "fire_armor",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "hellfire power armor" },
+    "description": "A large power armor suit. It seems to be very heavily insultated.",
+    "weight": "1 g",
+    "environmental_protection": 0,
+    "color": "dark_gray",
+    "symbol": "[",
+    "price": "1 cent",
+    "phase": "solid",
+    "volume": "3 ml",
+    "to_hit": 0,
+    "power_armor": false,
+    "warmth": 0,
+    "flags": [ "WATERPROOF", "STURDY" ],
+    "armor": [ 
+	  {
+		"layers": [ "OUTER" ],
+		"covers": [ "torso" ],
+		"encumbrance": 0,
+		"coverage": 100,
+		"material": [
+		  { "type": "plastic", "thickness": 0, "covered_by_mat": 100 }
+		]
+	  }
+	]
+  },
+  {
+    "id": "fire_power_armor_helmet",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR" ],
+    "category": "armor",
+    "name": { "str": "hellfire power armor helmet" },
+    "description": "A large power armor helmet. It seems to be very heavily insultated.",
+    "weight": "1 g",
+    "environmental_protection": 0,
+    "color": "dark_gray",
+    "symbol": "[",
+    "material": [ "plastic" ],
+    "price": "1 cent",
+    "phase": "solid",
+    "volume": "3 ml",
+    "to_hit": 1,
+    "power_armor": false,
+    "warmth": 0,
+    "armor": [
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "head" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [
+          { "type": "plastic", "thickness": 0, "covered_by_mat": 100 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "mouth" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [
+          { "type": "plastic", "thickness": 0 }
+        ]
+      },
+      {
+        "layers": [ "OUTER" ],
+        "covers": [ "eyes" ],
+        "encumbrance": 0,
+        "coverage": 100,
+        "material": [ { "type": "plastic", "thickness": 0 } ]
+      }
+    ],
+    "flags": [ "WATCH", "WATERPROOF", "STURDY" ]
+  },
+  {
+    "id": "survivor_belt",
+	"type": "ITEM",
+    "subtypes": [ "ARMOR", "TOOLS" ],
+    "name": { "str": "survivor utility belt" },
+    "weight": "3390 g",
+    "color": "brown",
+    "symbol": "[",
+    "description": "A custom-built leather utility belt covered with straps and pouches containing many useful hand tools and a sheath to carry a smaller blade.  Durable and carefully crafted to be comfortable to wear.  Activate to sheathe/draw a weapon.",
+    "price": "500 USD",
+    "price_postapoc": "10 USD",
+    "volume": "4 L",
+    "flags": [ "VARSIZE", "WATER_FRIENDLY", "BELTED", "STURDY", "OVERSIZE" ],
+    "armor": [ 
+	  {
+		"layers": [ "OUTER" ],
+		"covers": [ "torso" ],
+		"specifically_covers": [ "torso_waist" ],
+		"encumbrance": 0,
+		"coverage": 50,
+		"material": [
+		  { "type": "leather", "thickness": 2, "covered_by_mat": 100 },
+		  { "type": "steel", "thickness": 0.5, "covered_by_mat": 5 }
+		]
+	  }
+	],
+    "pocket_data": [
+      {
+        "holster": true,
+        "min_item_volume": "250 ml",
+        "max_contains_volume": "1 L",
+        "max_contains_weight": "2 kg",
+        "max_item_length": "90 cm",
+        "moves": 3,
+        "flag_restriction": [ "SHEATH_KNIFE", "SHEATH_SWORD" ]
+      }
+    ],
+    "use_action": [ { "type": "holster", "holster_prompt": "Sheath blade", "holster_msg": "You sheath your %s" }, "CROWBAR" ],
+    "qualities": [
+      [ "HAMMER", 3 ],
+      [ "PRY", 1 ],
+      [ "SAW_M", 2 ],
+      [ "SAW_W", 2 ],
+      [ "WRENCH", 2 ],
+      [ "AXE", 1 ],
+      [ "SCREW", 1 ],
+      [ "HAMMER_FINE", 1 ],
+      [ "SAW_M_FINE", 1 ],
+      [ "WRENCH_FINE", 1 ],
+      [ "SCREW_FINE", 1 ]
+    ]
+  }
+]

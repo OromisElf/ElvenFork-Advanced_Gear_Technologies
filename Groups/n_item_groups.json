@@ -1,0 +1,54 @@
+[
+  {
+    "id": "lab_dorm",
+    "type": "item_group",
+    "copy-from": "lab_dorm",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "helicopter",
+    "type": "item_group",
+    "copy-from": "helicopter",
+    "extend": {
+      "items": [
+        [ "recipe_nanites", 1 ],
+        [ "create_nanites", 1 ],
+        [ "nanitesnote", 1 ],
+        { "item": "nanites", "prob": 5, "count-min": 1, "count-max": 12 },
+        { "item": "nanites", "prob": 90, "charges-min": 950, "charges-max": 8000, "container-item": "jerrycan" }
+      ]
+    }
+  },
+  {
+    "id": "military_standard_sniper_rifles",
+    "type": "item_group",
+    "copy-from": "military_standard_sniper_rifles",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "army_personal_locker",
+    "type": "item_group",
+    "copy-from": "army_personal_locker",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "helicopter",
+	"//": "writing this, while desperately trying to track down, what the heck the rare itemgroup used to be: helicopter is an itemgroup used for military helicopters, and used to be located in military.json",
+    "type": "item_group",
+    "copy-from": "helicopter",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "supplies_mechanics_milspec",
+    "type": "item_group",
+    "copy-from": "supplies_mechanics_milspec",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "science",
+    "type": "item_group",
+    "copy-from": "science",
+	"//": "there used to be another group here that was the same, except with a probability of 5 to have 1-20 nanites",
+    "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  }
+]

@@ -1,0 +1,245 @@
+[
+  {
+    "id": "nanoturretgun",
+	"type": "ITEM",
+    "subtypes": [ "GUN" ],
+    "name": { "str": "nanotech turret gun" },
+    "description": "You shouldn't see this. nanoturretgun",
+    "symbol": "(",
+    "color": "light_gray",
+    "volume": "250 ml",
+    "weight": "200 g",
+    "price": "5 kUSD",
+    "price_postapoc": "100 USD",
+    "material": [ "nanite" ],
+    "skill": "pistol",
+    "ammo": [ "metal_nanopowder" ],
+    "flags": [ "NEVER_JAMS", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "WATERPROOF_GUN", "MOUNTED_GUN" ],
+    "to_hit": 0,
+    "durability": 10,
+    "clip_size": 100,
+    "reload": 0,
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "watertight": true, "ammo_restriction": { "metal_nanopowder": 100 } } ]
+  },
+  {
+    "id": "nanoturret",
+	"type": "ITEM",
+    "subtypes": [ "TOOL" ],
+    "name": { "str": "nanotech turret" },
+    "description": "You shouldn't see this. nanoturret",
+    "symbol": "(",
+    "color": "light_gray",
+    "price": "5 kUSD",
+    "price_postapoc": "100 USD",
+    "material": [ "nanite" ],
+    "flags": [ "NEVER_JAMS", "UNBREAKABLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ],
+    "volume": "250 ml",
+    "weight": "200 g",
+    "to_hit": 0
+  },
+  {
+    "id": "nanoturret_shredder",
+	"type": "ITEM",
+	"subtypes": [ "TOOL" ],
+    "copy-from": "nanoturret",
+    "name": { "str": "nanotech shredder turret (i)" },
+    "description": "Nanotech shotgun turret, blasts out large clouds of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "nano_turret_shredder",
+    "weight": "4375 g",
+    "volume": "2000 ml",
+    "use_action": [
+      {
+        "type": "place_monster",
+        "monster_id": "mon_nano_turret_pistol",
+        "difficulty": 0,
+        "moves": 100,
+        "skills": [ "computer" ]
+      },
+      {
+        "type": "transform",
+        "target": "nano_turret_pistol",
+        "menu_text": "Switch to vehicle mode",
+        "msg": "Turret state switched."
+      }
+    ]
+  },
+  {
+    "id": "nanoturret_pistol",
+	"type": "ITEM",
+	"subtypes": [ "TOOL" ],
+    "copy-from": "nanoturret",
+    "name": { "str": "nanotech pistol turret (i)" },
+    "description": "Nanotech pistol turret, fires bursts of of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "nano_turret_pistol",
+    "weight": "3627 g",
+    "volume": "1000 ml",
+    "use_action": [
+      {
+        "type": "place_monster",
+        "monster_id": "mon_nano_turret_pistol",
+        "difficulty": 0,
+        "moves": 100,
+        "skills": [ "computer" ]
+      },
+      {
+        "type": "transform",
+        "target": "nano_turret_pistol",
+        "menu_text": "Switch to vehicle mode",
+        "msg": "Turret state switched."
+      }
+    ]
+  },
+  {
+    "id": "nanoturret_rifle",
+	"type": "ITEM",
+	"subtypes": [ "TOOL" ],
+    "copy-from": "nanoturret",
+    "name": { "str": "nanotech rifle turret (i)" },
+    "description": "Nanotech rifle turret, fires large bursts of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "nano_turret_rifle",
+    "weight": "4375 g",
+    "volume": "2000 ml",
+    "use_action": [
+      {
+        "type": "place_monster",
+        "monster_id": "mon_nano_turret_rifle",
+        "difficulty": 0,
+        "moves": 100,
+        "skills": [ "computer" ]
+      },
+      {
+        "type": "transform",
+        "target": "nano_turret_rifle",
+        "menu_text": "Switch to vehicle mode",
+        "msg": "Turret state switched."
+      }
+    ]
+  },
+  {
+    "id": "nanoturret_smg",
+	"type": "ITEM",
+	"subtypes": [ "TOOL" ],
+    "copy-from": "nanoturret",
+    "name": { "str": "nanotech smg turret (i)" },
+    "description": "Nanotech smg turret, fires a storm of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "nano_turret_smg",
+    "weight": "4523 g",
+    "volume": "1500 ml",
+    "price": "3750 USD",
+    "price_postapoc": "100 USD",
+    "use_action": [
+      {
+        "type": "place_monster",
+        "monster_id": "mon_nano_turret_smg",
+        "difficulty": 0,
+        "moves": 100,
+        "skills": [ "computer" ]
+      },
+      {
+        "type": "transform",
+        "target": "nano_turret_smg",
+        "menu_text": "Switch to vehicle mode",
+        "msg": "Turret state switched."
+      }
+    ]
+  },
+  {
+    "id": "nano_turret_shredder",
+	"type": "ITEM",
+	"subtypes": [ "GUN" ],
+    "name": { "str": "nanotech shredder turret (v)" },
+    "copy-from": "nanoturretgun",
+    "description": "Nanotech shotgun turret, blasts out large clouds of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "rm614_lmg",
+    "weight": "4375 g",
+    "skill": "shotgun",
+    "volume": "250 ml",
+    "ranged_damage": { "damage_type": "bullet", "amount": 18 },
+    "range": 4,
+    "dispersion": 400,
+    "sight_dispersion": 80,
+    "recoil": 900,
+    "modes": [ [ "DEFAULT", "blast", 5, "SIMULTANEOUS" ], [ "BURST", "auto", 20 ] ],
+    "use_action": {
+      "type": "transform",
+      "target": "nanoturret_shredder",
+      "menu_text": "Switch to independent mode",
+      "msg": "Turret state switched."
+    }
+  },
+  {
+    "id": "nano_turret_pistol",
+	"type": "ITEM",
+	"subtypes": [ "GUN" ],
+    "name": { "str": "nanotech pistol turret (v)" },
+    "copy-from": "nanoturretgun",
+    "description": "Nanotech pistol turret, fires bursts of of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "needlepistol",
+    "weight": "3627 g",
+    "price": "2500 USD",
+    "price_postapoc": "100 USD",
+    "skill": "pistol",
+    "volume": "1000 ml",
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+    "range": 8,
+    "dispersion": 60,
+    "sight_dispersion": 20,
+    "recoil": 100,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 5, "SIMULTANEOUS" ], [ "AUTO", "auto", 15 ] ],
+    "use_action": {
+      "type": "transform",
+      "target": "nanoturret_pistol",
+      "menu_text": "Switch to independent mode",
+      "msg": "Turret state switched."
+    }
+  },
+  {
+    "id": "nano_turret_rifle",
+	"type": "ITEM",
+	"subtypes": [ "GUN" ],
+    "name": { "str": "nanotech rifle turret (v)" },
+    "copy-from": "nanoturretgun",
+    "description": "Nanotech rifle turret, fires large bursts of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "rm11b_sniper_rifle",
+    "weight": "4375 g",
+    "skill": "rifle",
+    "volume": "2000 ml",
+    "ranged_damage": { "damage_type": "bullet", "amount": 2 },
+    "range": 24,
+    "dispersion": 0,
+    "sight_dispersion": 0,
+    "recoil": 100,
+    "modes": [ [ "DEFAULT", "semi-auto", 1 ], [ "BURST", "burst", 10, "SIMULTANEOUS" ], [ "AUTO", "auto", 25 ] ],
+    "use_action": {
+      "type": "transform",
+      "target": "nanoturret_rifle",
+      "menu_text": "Switch to independent mode",
+      "msg": "Turret state switched."
+    }
+  },
+  {
+    "id": "nano_turret_smg",
+	"type": "ITEM",
+	"subtypes": [ "GUN" ],
+    "name": { "str": "nanotech smg turret (v)" },
+    "copy-from": "nanoturretgun",
+    "description": "Nanotech smg turret, fires a storm of monomolecular darts.  Each shot is 10x the projectiles as the unmounted version, leading to ability to hit at a longer distance and a bit more damage.  It feeds in powdered metal using a system similar to liquid transfer through the vehicle, then compresses it into ammo as needed.",
+    "looks_like": "american_180",
+    "weight": "4523 g",
+    "price": "3750 USD",
+    "skill": "smg",
+    "volume": "1500 ml",
+    "ranged_damage": { "damage_type": "bullet", "amount": 8 },
+    "range": 4,
+    "dispersion": 200,
+    "sight_dispersion": 20,
+    "recoil": 400,
+    "modes": [ [ "DEFAULT", "burst", 5, "SIMULTANEOUS" ], [ "BURST", "auto", 25 ], [ "FULL", "maximum", 50 ] ],
+    "use_action": {
+      "type": "transform",
+      "target": "nanoturret_smg",
+      "menu_text": "Switch to independent mode",
+      "msg": "Turret state switched."
+    }
+  }
+]

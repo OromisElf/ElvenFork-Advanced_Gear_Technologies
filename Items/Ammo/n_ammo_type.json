@@ -1,0 +1,14 @@
+[
+  {
+    "id": "nanites",
+    "type": "ammunition_type",
+    "name": "nanites",
+    "default": "nanites"
+  },
+  {
+    "id": "nanite_power_cell",
+    "type": "ammunition_type",
+    "name": "nanite power cells",
+    "default": "nanite_power_cell"
+  }
+]
