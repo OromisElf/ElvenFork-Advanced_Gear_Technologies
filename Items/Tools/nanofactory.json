@@ -5,16 +5,23 @@
     "subtypes": [ "TOOL" ],
     "name": { "str": "programming laptop" },
     "description": "A repaired laptop usable for programming.  Requires external power source to charge.",
-    "weight": "2721 g",
-    "volume": "1000 ml",
+    "material": [ { "type": "aluminum", "portion": 75 }, { "type": "plastic", "portion": 25 } ],
+    "charges_per_use": 1,
+    "weight": "2319 g",
+    "volume": "1003 ml",
+    "longest_side": "322 mm",
     "price": "1049 USD",
     "price_postapoc": "25 USD",
-    "material": [ "plastic", "aluminum" ],
     "symbol": ",",
     "color": "yellow",
-    "flags": [ "WATCH", "ALARMCLOCK", "NO_UNLOAD", "NO_RELOAD", "RECHARGE" ],
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 100 } } ],
-    "charges_per_use": 1
+    "use_action": [
+      { "type": "link_up", "cable_length": 5, "charge_rate": "140 W" }
+    ],
+    "pocket_data": [
+      { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "battery": 200 } },
+    ],
+    "flags": [ "WATCH", "ALARMCLOCK", "NO_UNLOAD", "NO_RELOAD", "RECHARGE", "WATER_BREAK", "ELECTRONIC", "ALLOWS_REMOTE_USE", "CAN_USE_IN_DARK" ],
+    "tool_ammo": [ "battery" ]
   },
   {
     "id": "nanofactory_1",
