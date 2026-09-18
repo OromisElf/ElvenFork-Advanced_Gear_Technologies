@@ -7,3 +7,6 @@ Like... armor old enough to straight up seg fault the game. Armor in general loo
 In general I do want to change stuff. Including where you can get nanites, where you encounter mechanical enemies and so on, so on. If you want the mod as closely to its original as can be, take this version and don't look back.
 
 Huge thanks to TheGoatGod who did a lot of work already AND has a centralized repo for all kinds of mods that otherwise would probably be lost to time <3 (If you read this and you want to take some of my alterations, feel free to grab what you want)
+
+Patchlog:
+2026/09/18: multitool no longer pistol, but switches correctly without charges (thinking about either making it use charges, or removing ability of loading it at all)

@@ -15,12 +15,10 @@
     "volume": "250 ml",
     "melee_damage": { "bash": 3, "cut": 12 },
     "to_hit": 1,
-    "flags": [ "BELT_CLIP", "SHEATH_KNIFE", "NONCONDUCTIVE", "TRADER_AVOID", "NO_CVD" ],
-    "max_charges": 0,
+    "flags": [ "BELT_CLIP", "SHEATH_KNIFE", "NONCONDUCTIVE", "TRADER_AVOID" ],
     "initial_charges": 0,
     "charges_per_use": 0,
-    "turns_per_charge": 0,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 50 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 100 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -81,12 +79,10 @@
     "volume": "2000 ml",
     "melee_damage": { "bash": 16, "cut": 6 },
     "to_hit": 2,
-    "flags": [ "BELT_CLIP", "SHEATH_SWORD", "NONCONDUCTIVE", "TRADER_AVOID", "NEEDS_UNFOLD", "NO_CVD" ],
-    "max_charges": 0,
+    "flags": [ "BELT_CLIP", "SHEATH_SWORD", "NONCONDUCTIVE", "TRADER_AVOID", "NEEDS_UNFOLD" ],
     "initial_charges": 0,
     "charges_per_use": 0,
-    "turns_per_charge": 0,
-    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 50 } } ],
+    "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 100 } } ],
     "use_action": [
       {
         "type": "transform",
@@ -109,7 +105,7 @@
   {
     "id": "nanite_multitool_weld",
 	"type": "ITEM",
-    "subtypes": [ "TOOL", "GUN" ],
+    "subtypes": [ "TOOL" ],
     "symbol": ";",
     "color": "light_gray",
     "name": { "str": "nanite multitool (laser welder)" },
@@ -130,13 +126,10 @@
       "BELT_CLIP",
       "NONCONDUCTIVE",
       "TRADER_AVOID",
-      "NEEDS_UNFOLD",
-      "NO_CVD"
+      "NEEDS_UNFOLD"
     ],
-    "max_charges": 0,
     "initial_charges": 0,
     "charges_per_use": 0,
-    "turns_per_charge": 0,
     "pocket_data": [ { "pocket_type": "MAGAZINE", "rigid": true, "ammo_restriction": { "nanite_ammo": 100 } } ],
     "use_action": [
       {
@@ -144,6 +137,7 @@
         "target": "nanite_multitool_small",
         "msg": "You switch your multitool to small tools mode.",
         "menu_text": "Switch tool mode",
+        "need_charges": 0,  
         "moves": 150
       },
       "OXYTORCH",
@@ -157,17 +151,6 @@
         "move_cost": 250
       }
     ],
-    "qualities": [ [ "WELD", 4 ] ],
-	"//": "here lies gun",
-    "skill": "pistol",
-	"ammo": [ "nanite_ammo" ],
-    "ranged_damage": { "damage_type": "bullet", "amount": 10 },
-    "range": 5,
-    "dispersion": 1,
-    "sight_dispersion": 4,
-    "recoil": 0,
-    "durability": 10,
-    "reload": 500,
-    "ammo_effects": [ "LASER" ]
+    "qualities": [ [ "WELD", 4 ] ]
   }
 ]
