@@ -50,5 +50,23 @@
     "copy-from": "science",
 	"//": "there used to be another group here that was the same, except with a probability of 5 to have 1-20 nanites",
     "extend": { "items": [ [ "recipe_nanites", 1 ], [ "create_nanites", 1 ], [ "nanitesnote", 1 ], [ "nanites", 5 ] ] }
+  },
+  {
+    "id": "science",
+    "type": "item_group",
+    "copy-from": "science",
+    "extend": { "items": [ { "item": "nanites", "prob": 10, "count": [ 1, 20 ] } ] }
+  },
+  {
+    "id": "supplies_mechanics_milspec",
+    "type": "item_group",
+    "copy-from": "supplies_mechanics_milspec",
+    "extend": { "items": [ [ "nanites_crowbar", 10 ], [ "nanites_wrench", 15 ], [ "nanites_screwdriver", 20], [ "nanites_hacksaw", 10 ], [ "nanite_multitool_small", 5], [ "precision_toolkit", 5 ], [ "nanite_core_1", 5], [ "ai_core_blank", 5], [ "xl_nanite_cluster", 20 ], [ "xl_nanite_ai", 10 ], [ "nano_frame", 40 ] ] }
+  },
+  {
+    "id": "supplies_mechanics_milspec",
+    "type": "item_group",
+    "copy-from": "supplies_mechanics_milspec",
+    "extend": { "items": [ { "item": "nanites", "prob": 10, "count": [ 1, 20 ] } ] }
   }
 ]
